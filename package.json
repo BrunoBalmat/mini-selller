@@ -1,0 +1,58 @@
+{
+	"name": "mini-seller",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"engines": {
+		"node": ">=22.3.0",
+		"npm": "please-use-yarn",
+		"pnpm": "please-use-yarn",
+		"yarn": ">=1.22.22",
+		"bun": "please-use-yarn"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"test": "vitest --watch",
+		"server": "json-server --watch __mocks__/db.json --port 3001"
+	},
+	"dependencies": {
+		"@hookform/resolvers": "^5.2.1",
+		"@tailwindcss/vite": "^4.1.13",
+		"@tanstack/react-query": "^5.0.0",
+		"axios": "^1.12.1",
+		"clsx": "^2.1.1",
+		"date-fns": "^4.1.0",
+		"lucide-react": "^0.544.0",
+		"nuqs": "^2.6.0",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"react-hook-form": "^7.62.0",
+		"react-router-dom": "^7.9.1",
+		"tailwindcss": "^4.1.13",
+		"zod": "^4.1.8"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.33.0",
+		"@testing-library/dom": "^10.4.1",
+		"@testing-library/jest-dom": "^6.8.0",
+		"@testing-library/react": "^16.3.0",
+		"@testing-library/user-event": "^14.6.1",
+		"@types/node": "^24.3.3",
+		"@types/react": "^19.1.13",
+		"@types/react-dom": "^19.1.9",
+		"@vitejs/plugin-react-swc": "^3.7.0",
+		"eslint": "^9.33.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"globals": "^16.3.0",
+		"jsdom": "^26.1.0",
+		"json-server": "^1.0.0-beta.3",
+		"typescript": "~5.8.3",
+		"typescript-eslint": "^8.39.1",
+		"vite": "^6.0.0",
+		"vitest": "^2.0.0"
+	}
+}
