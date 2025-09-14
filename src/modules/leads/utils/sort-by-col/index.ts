@@ -14,7 +14,10 @@ export function sortByCol(leads: Lead[], sortConfig: SortConfig | null): Lead[] 
 	};
 
 	const comparator = comparators[field];
-	const result = [...leads].sort(comparator);
-
-	return direction === "desc" ? result.reverse() : result;
+	
+	if (direction === "desc") {
+		return [...leads].sort((a, b) => comparator(b, a));
+	}
+	
+	return [...leads].sort(comparator);
 }

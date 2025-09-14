@@ -5,6 +5,7 @@ import { sortByCol } from ".";
 import type { Lead } from "../../interfaces";
 
 describe("sortByCol", () => {
+
 	it("should sort leads by name ascending", () => {
 		const leads = db.leads as Lead[];
 		const sortedLeads = sortByCol(leads, { field: "name", direction: "asc" });
